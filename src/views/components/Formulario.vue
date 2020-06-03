@@ -12,8 +12,7 @@
                         <form @submit.prevent="guardar">
                             <div class="form-group">
                                 <p>Tipo</p>
-                                <input type="number" 
-                                step="0.0000000001"
+                                <input type="string"
                                 placeholder="Tipo"
                                 class="form-control"
                                 v-model="form.type"
@@ -22,7 +21,7 @@
                             <div class="form-group">
                                 <p>Ancho</p>
                                 <input type="number" 
-                                step="0.0000000001"
+                                step="0.01"
                                 placeholder="Insertar ancho"
                                 class="form-control"
                                 v-model="form.width"
@@ -31,7 +30,7 @@
                             <div class="form-group">
                                 <p>Alto</p>
                                 <input type="number" 
-                                step="0.0000000001"
+                                step="0.01"
                                 placeholder="Insertar alto"
                                 class="form-control"
                                 v-model="form.height"
@@ -40,7 +39,7 @@
                             <div class="form-group">
                                 <p>Escala X</p>
                                 <input type="number" 
-                                step="0.0000000001"
+                                step="0.01"
                                 placeholder="Insertar escala x"
                                 class="form-control"
                                 v-model="form.xScale"
@@ -49,7 +48,7 @@
                             <div class="form-group">
                                 <p>Escala y</p>
                                 <input type="number" 
-                                step="0.0000000001"
+                                step="0.01"
                                 placeholder="Insertar escala Y"
                                 class="form-control"
                                 v-model="form.yScale"

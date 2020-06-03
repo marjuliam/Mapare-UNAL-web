@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const Form = new Schema({
-    type: Number,
+    type: String,
     width: Number,
     height: Number,
     xScale: Number,

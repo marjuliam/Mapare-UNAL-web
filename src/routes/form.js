@@ -9,6 +9,11 @@ router.get("/", async (req, res) => {
     res.json(forms);
 });
 
+router.get("/getAll", async (req, res) => {
+    const forms = await Form.find();
+    res.json(forms);
+});
+
 router.post("/", async (req, res) => {
     const forms = new Form(req.body);
     await forms.save();
